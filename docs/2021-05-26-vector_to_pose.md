@@ -70,4 +70,4 @@ $$
 
 在rviz中验证一下，蓝色的箭头是向量，下面大的坐标系就是经过变换后的坐标系（做了一个向下平移以便与基坐标系区分），可以看到坐标系的Z轴是与向量同向的。
 
-<img src="/home/yinghao/Nutstore/Typora/%E7%AC%94%E8%AE%B0/Vector%20to%20Pose.assets/image-20210526223344320.png" alt="image-20210526223344320" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/gywhitel/Image-Warehouse/master/typora-image/image-20210526223344320.png" alt="image-20210526223344320" style="zoom:80%;" />
