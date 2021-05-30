@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Convert a Vector to Isometry transformation
-date: last_modified_date
+Page last modified: last_modified_date
 ---
 # 方向向量转换为位姿
 
