@@ -2,6 +2,7 @@
 layout: default
 title: Convert a Vector to Isometry transformation
 Page last modified: last_modified_date
+categories: robotics transformation geometry
 ---
 # 方向向量转换为位姿
 
