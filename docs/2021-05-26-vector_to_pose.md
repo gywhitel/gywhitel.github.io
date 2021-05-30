@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Convert a Vector to Isometry transformation
-data: last_modified_date
+date: last_modified_date
 ---
 # 方向向量转换为位姿
 
@@ -22,12 +22,13 @@ data: last_modified_date
 将$\vec n$向xz平面投影得到点$P(n_x,n_z)$，可以计算得到
 $$
 pitch: \beta =atan2(n_x,n_z)\\
+
 roll: \alpha = atan2(-n_y, \sqrt{n_x^2+n_z^2})
 $$
 
 算第二个旋转角时要注意，因为$\sqrt{n_x^2+n_z^2}$丢失了符号，所以要根据旋转方向确定符号，我是画图判断的。
 
-$rpy=(0,\beta,\alpha)$
+\\(rpy=(0,\beta,\alpha)\\)
 
 
 
@@ -35,7 +36,8 @@ $rpy=(0,\beta,\alpha)$
 
 旋转X轴只用到yaw和pitch，也就是先绕Z轴旋转，再绕Y轴旋转。
 $$
-yaw: \gamma =atan2(n_y,n_x) \\
+yaw: \gamma =atan2(n_y,n_x)\\
+
 pitch: \beta =atan2(-n_z, \sqrt{n_x^2+n_y^2})
 $$
 
@@ -52,13 +54,15 @@ $$
 
 绕Y轴旋转， pitch
 $$
-q_y(\beta)=[cos{\gamma \over 2}，0，sin{\gamma \over 2}, 0] \\
-
+q_y(\beta)=[cos{\gamma \over 2}，0，sin{\gamma \over 2}, 0]
 $$
+
 绕X轴旋转，roll
+
 $$
 q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0]
 $$
+
 总的rpy旋转变换(用$c\theta$表示$cos{\theta \over 2}$)
 
 $$
