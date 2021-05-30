@@ -5,11 +5,11 @@ Page last modified: last_modified_date
 ---
 # 方向向量转换为位姿
 
-最近想让机械臂末端沿着物体表面的法向走，这就需要将一个向量$\vec n = (n_x, n_y, n_z)$ 转为位姿 —— 一个欧式变换4x4的矩阵。
+最近想让机械臂末端沿着物体表面的法向走，这就需要将一个向量 $\vec n = (n_x, n_y, n_z)$ 转为位姿 —— 一个欧式变换4x4的矩阵。
 
 在三维空间中，我们只需要两个角度便可以定义一个方向——该方向与任意两个轴的夹角。
 
-首先将向量$\vec n$转化为欧拉角(current frame) $rpy=(yaw, pitch, roll)$，其实就是将基坐标系的某一个轴转到与向量共线。
+首先将向量 $\vec n$转化为欧拉角(current frame) $rpy=(yaw, pitch, roll)$，其实就是将基坐标系的某一个轴转到与向量共线。
 
 ## 向量转化为欧拉角
 
@@ -19,14 +19,14 @@ Page last modified: last_modified_date
 
 旋转Z轴只用到pitch和roll，也就是先绕Y轴旋转，再绕旋转后的X轴旋转。
 
-将$\vec n$向xz平面投影得到点$P(n_x,n_z)$，可以计算得到
+将 $\vec n$向xz平面投影得到点$P(n_x,n_z)$ ，可以计算得到
 $$
 pitch: \beta =atan2(n_x,n_z)\\
 
 roll: \alpha = atan2(-n_y, \sqrt{n_x^2+n_z^2})
 $$
 
-算第二个旋转角时要注意，因为$\sqrt{n_x^2+n_z^2}$丢失了符号，所以要根据旋转方向确定符号，我是画图判断的。
+算第二个旋转角时要注意，因为 $\sqrt{n_x^2+n_z^2}$ 丢失了符号，所以要根据旋转方向确定符号，我是画图判断的。
 
 \\(rpy=(0,\beta,\alpha)\\)
 
@@ -63,7 +63,7 @@ $$
 q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0]
 $$
 
-总的rpy旋转变换(用$c\theta$表示$cos{\theta \over 2}$)
+总的rpy旋转变换(用 $c\theta$ 表示 $cos{\theta \over 2}$ )
 
 $$
 q_z(\gamma)q_y(\beta)q_z(\alpha)=\begin{bmatrix}
