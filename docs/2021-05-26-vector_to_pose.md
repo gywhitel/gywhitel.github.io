@@ -58,6 +58,7 @@ $$
 q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0] \\q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0] \\
 $$
 总的rpy旋转变换(用$c\theta$表示$cos{\theta \over 2}$)
+
 $$
 q_z(\gamma)q_y(\beta)q_z(\alpha)=\begin{bmatrix}
 c\gamma \cdot c\beta \cdot c\alpha + s\gamma \cdot s\beta \cdot s\alpha \\
