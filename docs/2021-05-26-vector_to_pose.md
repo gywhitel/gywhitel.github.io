@@ -69,6 +69,7 @@ c\gamma \cdot s\beta \cdot c\alpha + s\gamma \cdot c\beta \cdot s\alpha \\
 -c\gamma \cdot s\beta \cdot s\alpha + s\gamma \cdot c\beta \cdot c\alpha 
 \end{bmatrix}
 $$
+
 把上面计算出来的欧拉角带入就可以求出向量到四元数的转换啦。
 
 在rviz中验证一下，蓝色的箭头是向量，下面大的坐标系就是经过变换后的坐标系（做了一个向下平移以便与基坐标系区分），可以看到坐标系的Z轴是与向量同向的。
