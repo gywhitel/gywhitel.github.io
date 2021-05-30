@@ -24,6 +24,7 @@ $$
 pitch: \beta =atan2(n_x,n_z)\\
 roll: \alpha = atan2(-n_y, \sqrt{n_x^2+n_z^2})
 $$
+
 算第二个旋转角时要注意，因为$\sqrt{n_x^2+n_z^2}$丢失了符号，所以要根据旋转方向确定符号，我是画图判断的。
 
 $rpy=(0,\beta,\alpha)$
@@ -67,8 +68,9 @@ c\gamma \cdot s\beta \cdot c\alpha + s\gamma \cdot c\beta \cdot s\alpha \\
 -c\gamma \cdot s\beta \cdot s\alpha + s\gamma \cdot c\beta \cdot c\alpha 
 \end{bmatrix}
 $$
+
 把上面计算出来的欧拉角带入就可以求出向量到四元数的转换啦。
 
 在rviz中验证一下，蓝色的箭头是向量，下面大的坐标系就是经过变换后的坐标系（做了一个向下平移以便与基坐标系区分），可以看到坐标系的Z轴是与向量同向的。
 
-<img src="https://raw.githubusercontent.com/gywhitel/Image-Warehouse/master/typora-image/image-20210526223344320.png" alt="image-20210526223344320" style="zoom:80%;" />
+<center><img src="https://raw.githubusercontent.com/gywhitel/Image-Warehouse/master/typora-image/image-20210526223344320.png" alt="image-20210526223344320" style="zoom:80%;" align /></center>
