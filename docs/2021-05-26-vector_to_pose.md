@@ -47,18 +47,17 @@ $rpy=(\gamma, \beta,0)$
 
 绕Z轴旋转，yaw
 $$
-q_z(\gamma)=[cos{\gamma \over 2}，0,0,sin{\gamma \over 2}]
+q_z(\gamma)=[cos{\gamma \over 2}, 0,0,sin{\gamma \over 2}]
 $$
 
 绕Y轴旋转， pitch
 $$
 q_y(\beta)=[cos{\gamma \over 2}，0，sin{\gamma \over 2}, 0] \\
 
-q_y(\beta)=[cos{\gamma \over 2}，0，sin{\gamma \over 2}, 0] \\
 $$
 绕X轴旋转，roll
 $$
-q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0] \\q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0] \\
+q_x(\alpha)=[cos{\gamma \over 2}，sin{\gamma \over 2},0,0]
 $$
 总的rpy旋转变换(用$c\theta$表示$cos{\theta \over 2}$)
 
