@@ -22,7 +22,7 @@ categories: robotics transformation geometry
 
 将 $\vec n$向xz平面投影得到点$P(n_x,n_z)$ ，可以计算得到
 $$
-pitch: \beta =atan2(n_x,n_z)\n
+pitch: \beta =atan2(n_x,n_z)  
 roll: \alpha = atan2(-n_y, \sqrt{n_x^2+n_z^2})
 $$
 
