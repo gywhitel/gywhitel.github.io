@@ -22,7 +22,7 @@ categories: robotics transformation geometry
 
 将 $\vec n$向xz平面投影得到点$P(n_x,n_z)$ ，可以计算得到
 $$
-pitch: \beta =atan2(n_x,n_z)  
+pitch: \beta =atan2(n_x,n_z)  ,
 roll: \alpha = atan2(-n_y, \sqrt{n_x^2+n_z^2})
 $$
 
@@ -36,7 +36,7 @@ $$
 
 旋转X轴只用到yaw和pitch，也就是先绕Z轴旋转，再绕Y轴旋转。
 $$
-yaw: \gamma =atan2(n_y,n_x)\\
+yaw: \gamma =atan2(n_y,n_x),\\
 pitch: \beta =atan2(-n_z, \sqrt{n_x^2+n_y^2})
 $$
 
