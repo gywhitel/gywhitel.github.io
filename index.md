@@ -8,7 +8,7 @@ permalink: /
 
 # Yinghao's GitHub page
 
-## About me
+## About me [中文版]({{site.url}}/index_cn.md)
 
 ## My notes
 

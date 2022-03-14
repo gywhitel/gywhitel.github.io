@@ -120,7 +120,7 @@ _note: `footer_content` is deprecated, but still supported. For a better experie
 
 ```yaml
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+color_scheme: light
 ```
 <button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
 
@@ -177,7 +177,6 @@ just_the_docs:
       # Supports true or false (default)
       search_exclude: false
 ```
-
 You can reference multiple collections.
 This creates categories in the navigation with the configured names.
 ```yaml
