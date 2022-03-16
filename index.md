@@ -8,8 +8,8 @@ permalink: /
 
 # Yinghao's GitHub page
 
-## [About me]({{site.url}}/docs/2022-03-14-me) [【中文版】]({{site.url}}/docs/2022-03-14-me_cn)
+<!-- ## [About me]({{site.url}}/docs/2022-03-14-me) [【中文版】]({{site.url}}/docs/2022-03-14-me_cn) -->
 
-## My notes
+## [My notes]({{site.url}}/docs/post)
 
-## My research experience
+## [My research experience]({{site.url}}/docs/research)
